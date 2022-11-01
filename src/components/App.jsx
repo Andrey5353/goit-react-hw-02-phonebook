@@ -64,12 +64,12 @@ export class App extends Component {
         <div className={css.contactsWrap}>
           <h2 className={css.phonebookTitle}>Contacts</h2>
           <Filter value={this.state.filter} onChange={this.changeFilter} />
-        </div>
 
-        <ContactList
-          contacts={this.getFiltredContacts()}
-          onDeleteContact={this.deleteContact}
-        />
+          <ContactList
+            contacts={this.getFiltredContacts()}
+            onDeleteContact={this.deleteContact}
+          />
+        </div>
       </section>
     );
   }
