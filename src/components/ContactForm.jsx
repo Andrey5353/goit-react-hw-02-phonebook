@@ -66,7 +66,9 @@ export class ContactForm extends Component {
   }
 }
 
-INITIAL_STATE.propTypes = {
-  name: PropTypes.number.isRequired,
-  number: PropTypes.number.isRequired,
+ContactForm.propTypes = {
+  state: PropTypes.shape({
+    name: PropTypes.number.isRequired,
+    number: PropTypes.number.isRequired,
+  }),
 };
